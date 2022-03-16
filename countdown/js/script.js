@@ -16,5 +16,18 @@ const countdown = () => {
     const countMinute = Math.floor((subtractionTime % hour) / minute)
     const countSecond = Math.floor((subtractionTime % minute) / second)
 
+
+    const dayCell = document.querySelector('.day')
+    dayCell.textContent = countDay
+
+    const hourCell = document.querySelector('.hour')
+    hourCell.textContent = countHour
+
+    const minuteCell = document.querySelector('.minute')
+    minuteCell.textContent = countMinute
+
+    const secondCell = document.querySelector('.second')
+    secondCell.textContent = countSecond
+    
 }
 countdown()
