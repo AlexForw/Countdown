@@ -28,6 +28,6 @@ const countdown = () => {
 
     const secondCell = document.querySelector('.second')
     secondCell.textContent = countSecond
-    
+
 }
-countdown()
+setInterval(countdown,1000) 
