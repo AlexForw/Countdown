@@ -5,9 +5,16 @@ const countdown = () => {
     const subtractionTime = countDate - currentTime
     
 
-    const sec = 1000
-    const minute = sec * 60
+    const second = 1000
+    const minute = second * 60
     const hour = minute * 60
     const day = hour * 24
+
+
+    const countDay = Math.floor(subtractionTime / day)
+    const countHour = Math.floor((subtractionTime % day) / hour)
+    const countMinute = Math.floor((subtractionTime % hour) / minute)
+    const countSecond = Math.floor((subtractionTime % minute) / second)
+
 }
 countdown()
